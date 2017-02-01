@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 
 import { Link, Route } from 'react-router-dom'
 import GamesPage from './GamesPage'
@@ -18,8 +18,8 @@ class App extends Component {
         <Route exact path="/games" component={ GamesPage } />
         <Route path="/games/new" component={ GameForm } />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
