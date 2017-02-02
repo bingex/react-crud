@@ -19,7 +19,7 @@ mongodb.MongoClient.connect(dbUrl, function (err, db) {
     db.collection('games').find({}).toArray((err, games) => {
       res.json({ games })
     })
-  })
+  }) 
 
   app.post('/api/games', (req, res) => {
     const { errors, isValid } = validate(req.body)
