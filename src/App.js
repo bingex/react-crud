@@ -3,7 +3,7 @@ import './App.css';
 
 import { Link, Route } from 'react-router-dom';
 import GamesPage from './GamesPage';
-import GameForm from './GameForm';
+import GameFormPage from './GameFormPage';
 
 class App extends Component {
   render() {
@@ -16,8 +16,8 @@ class App extends Component {
         </div>
 
         <Route exact path="/games" component={GamesPage} />
-        <Route path="/games/new" component={GameForm} />
-        <Route path="/game/:_id" component={GameForm} />
+        <Route path="/games/new" component={GameFormPage} />
+        <Route path="/game/:_id" component={GameFormPage} />
       </div>
     );
   }
